@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "b71cde95-43f9-4d7e-8b1f-0bb36d13e854",
+		"name": "weather-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "First Source Weather Forecast",
+			"item": [
+				{
+					"name": "good location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-first-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-first-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "Grenlandia"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "latitude, longitude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-first-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-first-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "52.5200,13.4050"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-first-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-first-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "@*#&AH"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "zip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-first-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-first-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "75-135"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad latitude, longitude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-first-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-first-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "52.5200a13.4050"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Second Source Weather Forecast",
+			"item": [
+				{
+					"name": "good location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-second-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-second-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "Warszawa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "latitude, longitude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-second-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-second-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "52.5200,13.4050"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-second-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-second-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "@*#&AH"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad latitude, longitude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-second-source/:location",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-second-source",
+								":location"
+							],
+							"variable": [
+								{
+									"key": "location",
+									"value": "as252.5200,13asw@4050"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Third Source Weather Forecast",
+			"item": [
+				{
+					"name": "good  latitude, longitude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-third-source/:lat/:lon",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-third-source",
+								":lat",
+								":lon"
+							],
+							"variable": [
+								{
+									"key": "lat",
+									"value": "54.1759"
+								},
+								{
+									"key": "lon",
+									"value": "15.5833"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad latitude, longitude",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-third-source/:lat/:lon",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-third-source",
+								":lat",
+								":lon"
+							],
+							"variable": [
+								{
+									"key": "lat",
+									"value": "a!@"
+								},
+								{
+									"key": "lon",
+									"value": "$asd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad latitude, longitude 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-third-source/:lat/:lon",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-third-source",
+								":lat",
+								":lon"
+							],
+							"variable": [
+								{
+									"key": "lat",
+									"value": "12.1"
+								},
+								{
+									"key": "lon",
+									"value": "$asd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad latitude, longitude 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-third-source/:lat/:lon",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-third-source",
+								":lat",
+								":lon"
+							],
+							"variable": [
+								{
+									"key": "lat",
+									"value": "12.1"
+								},
+								{
+									"key": "lon",
+									"value": "190"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "bad latitude, longitude 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/weather-forecast-from-third-source/:lat/:lon",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"weather-forecast-from-third-source",
+								":lat",
+								":lon"
+							],
+							"variable": [
+								{
+									"key": "lat",
+									"value": "-95"
+								},
+								{
+									"key": "lon",
+									"value": "90"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:9000/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/health",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "not found url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/bad-request",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"bad-request"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
